@@ -78,7 +78,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn button" type="button">
+          <button class="hero-btn button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -149,6 +149,7 @@
                 alt="Планшет з клавіатурой та руками"
                 width="370"
               />
+              <h3 class="about-sub-title">Десктопні додатки</h3>
             </li>
             <li class="about-item">
               <img
@@ -156,9 +157,11 @@
                 alt="телефон с ноутбуком та руками"
                 width="370"
               />
+              <h3 class="about-sub-title">Мобільні додатки</h3>
             </li>
             <li class="about-item">
               <img src="./images/ipad2.jpg" alt="Руки і планшет" width="370" />
+              <h3 class="about-sub-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -448,5 +451,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="icon icon-close" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
