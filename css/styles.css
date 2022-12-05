@@ -734,7 +734,8 @@ body {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .portfolio-action::before {
+.portfolio-link:hover .portfolio-action::before,
+ .portfolio-link:focus .portfolio-action::before {
   opacity: 1;
   transform: translateY(0);
 }
@@ -757,7 +758,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .portfolio-pre-text {
+.portfolio-link:hover .portfolio-pre-text,
+.portfolio-link:focus .portfolio-pre-text {
   opacity: 1;
   transform: translateY(0);
 }
